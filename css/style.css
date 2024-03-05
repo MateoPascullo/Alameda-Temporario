@@ -70,10 +70,10 @@ p {
 
 /**Header**/
 .webp .header {
-    background-image: url(../img_dpto/2-_2_.webp);
+    background-image: url(../img_dpto/principal_nueva.webp);
 }
 .no-webp .header {
-    background-image: url(../img_dpto/2\ \(2\).jpeg);
+    background-image: url(../img_dpto/principal_nueva.jpeg);
 }
 .header {
     

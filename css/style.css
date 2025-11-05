@@ -369,4 +369,33 @@ p {
   margin-top: 2rem;
 }
 
-    
+
+
+
+
+
+/* --- Ajuste responsive para móvil --- */
+@media (max-width: 768px) {
+
+  .contenedor {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  .blog {
+    display: block;
+  }
+
+  .entrada__imagen img {
+    width: 100%;
+    height: auto;
+  }
+
+  .mapa-contenedor {
+    padding-bottom: 75%; /* relación más alta para móviles */
+  }
+}
+
+
+
+

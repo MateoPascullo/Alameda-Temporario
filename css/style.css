@@ -346,6 +346,22 @@ p {
 
 
 
+/* --- Ajuste responsive general --- */
+.contenedor {
+  max-width: 1200px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* Hace que las imágenes de la galería ocupen todo el ancho disponible */
+.entrada__imagen img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 0.5rem;
+}
+
+/* Mapa responsivo al 100% del ancho */
 .mapa-contenedor {
   position: relative;
   width: 100%;
@@ -365,36 +381,36 @@ p {
   border: 0;
 }
 
-.ubicacion {
-  margin-top: 2rem;
-}
-
-
-
-
-
-
-/* --- Ajuste responsive para móvil --- */
+/* --- MODO MÓVIL --- */
 @media (max-width: 768px) {
 
-  .contenedor {
+  /* Hace que todo el contenido se expanda al ancho completo */
+  .contenedor,
+  .contenido-principal,
+  .blog,
+  .entrada,
+  .ubicacion {
     width: 100%;
+    max-width: 100%;
     padding: 0 1rem;
-  }
-
-  .blog {
-    display: block;
+    box-sizing: border-box;
   }
 
   .entrada__imagen img {
     width: 100%;
-    height: auto;
   }
 
   .mapa-contenedor {
-    padding-bottom: 75%; /* relación más alta para móviles */
+    padding-bottom: 75%; /* un poco más alto en móvil */
   }
 }
+
+
+
+
+
+
+
 
 
 
